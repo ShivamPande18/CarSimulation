@@ -12,8 +12,8 @@ public class MouseRotation : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
 
     }
 
@@ -30,4 +30,3 @@ public class MouseRotation : MonoBehaviour
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
-
