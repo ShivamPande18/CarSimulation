@@ -30,4 +30,3 @@ public class MouseRotation : MonoBehaviour
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
-
