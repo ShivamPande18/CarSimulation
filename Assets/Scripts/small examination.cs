@@ -6,6 +6,7 @@ public class FlyingObject : MonoBehaviour
     public float floatingSpeed = 2f;
     public float flyingSpeed = 5f;
     public Transform cameraTransform;
+    public float cameraDistance = 3f; // Variable for controlling camera distance
 
     private Vector3 initialPosition;
     private Vector3 targetFlyingPosition;
@@ -53,7 +54,7 @@ public class FlyingObject : MonoBehaviour
 
                 if (isFloating)
                 {
-                    targetFlyingPosition = cameraTransform.position + cameraTransform.forward * 3f;
+                    targetFlyingPosition = cameraTransform.position + cameraTransform.forward * cameraDistance; // Use the cameraDistance variable here
                 }
                 else
                 {
